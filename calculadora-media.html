@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href="calculadora-media.css">
+    <script type="text/javascript" src="calculadora-media.js"></script>
+    <title>Calculadora de Média</title>
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <h1 class="page-title">Calculadora de Média</h1>
+            <p class="page-subtitle">Descubra a média de suas notas bimestrais</p>
+        </div>
+        <p class="insert-note">1º Bimestre: <input id="first-quarter-note" class="input-textarea" type="text"></p>
+        <p class="insert-note">2º Bimestre: <input id="second-quarter-note" class="input-textarea" type="text"></p>
+        <p class="insert-note">3º Bimestre: <input id="third-quarter-note" class="input-textarea" type="text"></p>
+        <p class="insert-note">4º Bimestre: <input id="fourth-quarter-note" class="input-textarea" type="text"></p>
+        <input id="btn-calculate" type="button" value="Calcular" onclick="calculate();">
+        <p id="result"></p>
+        <input id="btn-restart" type="button" value="&#10226;" onclick="restartValues();">
+      </div>
+</body>
+</html>

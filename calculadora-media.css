@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --linear-gradient: linear-gradient(120deg, #c92ca3, #df7159, #c92ca3);
+  --purple: #6722f7;
+  --violet: #c62ba8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--linear-gradient);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  height: 400px;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  background-color: var(--white);
+  box-shadow: 0 6px 6px 6px rgba(0,0,0,0.20);
+}
+
+#header {
+  background-color: var(--purple);
+  height: 85px;
+  border-radius: 2px 2px 0px 0px;
+}
+
+.page-title {
+  margin: 20px 0px 5px;
+  color: var(--white);
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.page-subtitle {
+  margin: 5px 0px 10px 0px;
+  color: var(--white);
+  font-size: 13.8px;
+  text-align: center;
+}
+
+.insert-note {
+  margin: 15px auto 0px auto;
+  color: var(--black);
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.input-textarea {
+  height: 25px;
+  width: 100px;
+  margin: 0px 5px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: var(--purple);
+  outline: 0;
+  color: var(--black);
+  font-size: 15px;
+  text-align: center;
+}
+
+#btn-calculate {
+  height: 40px;
+  width: 190px;
+  margin: 25px auto 0px auto;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  color: var(--white);
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color: var(--purple);
+}
+
+#btn-calculate:active {
+  background-color: var(--violet);
+}
+
+#result {
+  margin: 15px 0px 10px 0px;
+  color: var(--black);
+  font-size: 16px;
+  text-align: center;
+}
+
+#btn-restart {
+  position: absolute;
+  margin: 358px 0px 0px 150px;
+  border: none;
+  color: var(--black);
+  font-size: 25px;
+  cursor: pointer;
+  background-color: var(--n);
+}
+
+#btn-restart:hover {
+  transform: scale(1.1);
+}
